@@ -11,7 +11,7 @@ public class Driver {
 		Scanner sc = new Scanner(System.in);
 		int choice;
 		
-		Employee obj = new Employee("ashutosh", "Tripathi");
+		Employee empObj = new Employee("ashutosh", "Tripathi");
 		
 		System.out.println("Please enter the department from the following");
 		System.out.println("1. Technical");
@@ -21,7 +21,24 @@ public class Driver {
 		
 		choice = sc.nextInt();
 		
+		switch(choice) {
 		
+		case 1:
+			//tech
+			
+		case 2:
+			//admin
+			
+		case 3:
+			//hr
+			
+		case 4:
+			//legal
+			
+		default:
+			System.out.println("Invalid Input");
+		
+		} //end of switch
 
 	}
 
