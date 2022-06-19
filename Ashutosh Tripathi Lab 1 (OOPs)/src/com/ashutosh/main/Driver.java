@@ -35,19 +35,19 @@ public class Driver {
 			break;
 			
 		case 2:
-			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "admin");
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName().toLowerCase(), empObj.getLastName().toLowerCase(), "admin");
 			generatedPassword = csObj.generatePassword();
 			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
 			
 		case 3:
-			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "hr");
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName().toLowerCase(), empObj.getLastName().toLowerCase(), "hr");
 			generatedPassword = csObj.generatePassword();
 			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
 			
 		case 4:
-			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "legal");
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName().toLowerCase(), empObj.getLastName().toLowerCase(), "legal");
 			generatedPassword = csObj.generatePassword();
 			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
