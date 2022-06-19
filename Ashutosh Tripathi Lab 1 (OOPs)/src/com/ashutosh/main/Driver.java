@@ -29,19 +29,27 @@ public class Driver {
 		switch(choice) {
 		
 		case 1:
-			//tech
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "tech");
+			generatedPassword = csObj.generatePassword();
+			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
 			
 		case 2:
-			//admin
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "admin");
+			generatedPassword = csObj.generatePassword();
+			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
 			
 		case 3:
-			//hr
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "hr");
+			generatedPassword = csObj.generatePassword();
+			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
 			
 		case 4:
-			//legal
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "legal");
+			generatedPassword = csObj.generatePassword();
+			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
 			
 		default:
