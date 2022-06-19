@@ -29,7 +29,7 @@ public class Driver {
 		switch(choice) {
 		
 		case 1:
-			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName(), empObj.getLastName(), "tech");
+			generatedEmail = csObj.generateEmailAddress(empObj.getFirstName().toLowerCase(), empObj.getLastName().toLowerCase(), "tech");
 			generatedPassword = csObj.generatePassword();
 			csObj.showCredentials(empObj, generatedEmail, generatedPassword);
 			break;
