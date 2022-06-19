@@ -15,9 +15,9 @@ public class CredentialService {
 		
 		String values = capitalLetters + smallLetters + numbers + specialCharacters;
 		
-		Random rand = new Random();
+		Random rand = new Random(); //object of Random class
 		
-		char[] pwd = new char[8];
+		char[] pwd = new char[8]; //length of password
 		
 		for(int i=0; i<8; i++) {
 			//length() method to provide the length of values string as input for nextInt method
