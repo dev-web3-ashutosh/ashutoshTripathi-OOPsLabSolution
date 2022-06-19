@@ -20,6 +20,9 @@ public class CredentialService {
 		char[] pwd = new char[8];
 		
 		for(int i=0; i<8; i++) {
+			//length() method to provide the length of values string as input for nextInt method
+			//rand.nextInt method to get a random character from values
+			//charAt method to get a character from values string
 			pwd[i] = values.charAt(rand.nextInt(values.length()));
 		}
 		
