@@ -39,7 +39,9 @@ public class Driver {
 			System.out.println("Invalid Input");
 		
 		} //end of switch
-
+		
+		sc.close();
+		
 	}
 
 }
