@@ -3,15 +3,20 @@ package com.ashutosh.main;
 import java.util.Scanner;
 
 import com.ashutosh.model.Employee;
+import com.ashutosh.service.CredentialService;
 
 public class Driver {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
 		int choice;
+		String generatedEmail;
+		char[] generatedPassword;
 		
-		Employee empObj = new Employee("ashutosh", "tripathi");
+		Scanner sc = new Scanner(System.in);
+		
+		Employee empObj = new Employee("Ashutosh", "Tripathi");
+		CredentialService csObj = new CredentialService();
 		
 		System.out.println("Please enter the department from the following");
 		System.out.println("1. Technical");
