@@ -38,7 +38,7 @@ public class CredentialService {
 		
 		System.out.println("Dear " + empObj.getFirstName() + "your generated credentials are as follows");
 		System.out.println("Email --> " + email);
-		System.out.println("Password --> " + password);
+		System.out.println("Password --> " + String.valueOf(password));
 	}
 
 }
