@@ -9,6 +9,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
+		//instance variables
 		int choice;
 		String generatedEmail;
 		char[] generatedPassword;
